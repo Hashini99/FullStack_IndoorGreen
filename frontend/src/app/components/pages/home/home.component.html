@@ -1,0 +1,25 @@
+
+
+
+<ul>
+  <li *ngFor="let plant of plant">
+    <a routerLink="/plant/{{plant.id}}">
+      <img [src]="plant.imageUrl" [alt]="plant.name" />
+      <div class="content">
+        <div class="name">
+          {{plant.name}}
+
+        </div>
+
+
+        <div class="price">
+          <span>
+            {{plant.price | currency}}
+          </span>
+        </div>
+
+        <div class="description">
+          <span>
+            {{plant.description}}
+          </span>
+        </div>
