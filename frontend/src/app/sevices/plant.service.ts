@@ -12,4 +12,7 @@ export class PlantService {
   getAll():plant[]{
     return sample_plants;
   }
+  getPlantById(plantId:string):plant{
+    return this.getAll().find(plant=>plant.id==plantId)?? new plant();
+  }
 }
