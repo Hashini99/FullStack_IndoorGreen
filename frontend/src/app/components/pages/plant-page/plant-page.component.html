@@ -1,0 +1,45 @@
+
+  [visible]="!plant"
+  notFoundMessage="Food Not Found"
+  resetLinkText="Back To Homepage">
+
+<div *ngIf="plant" class="container">
+  <img [src]="plant.imageUrl" [alt]="plant.name"/>
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{plant.name}}
+      </span>
+
+      <div class="description">
+        <span class="description">
+          {{plant.description}}
+        </span>
+
+      </div>
+
+   <div class="tags">
+      <a *ngFor="let tag of plant.tags" routerLink="/tag/{{tag}}">
+        {{tag}}
+      </a>
+    </div>
+
+
+
+    <div class="price">
+      <span>
+        {{plant.price | currency}}
+      </span>
+    </div>
+
+    <div class="description">
+      <span>
+        {{plant.price | currency}}
+      </span>
+    </div>
+
+
+
+  </div>
+</div>
