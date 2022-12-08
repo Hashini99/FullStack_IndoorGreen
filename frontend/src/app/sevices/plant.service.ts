@@ -12,4 +12,8 @@ export class PlantService {
   getAll():plant[]{
     return sample_plants;
   }
+  getAllPlantsBySearchTerm(search_term:string)
+  {return this.getAll().filter(plant=>plant.name.toLowerCase().includes(search_term.toLowerCase()));
+
+  }
 }

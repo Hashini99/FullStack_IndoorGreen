@@ -21,7 +21,7 @@ export const sample_plants: plant[] = [
     favorite: true,
    // origins: ['persia', 'middle east', 'china'],
     //stars: 4.7,
-    imageUrl: 'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1660074685-41378e7d-d10d-4a1a-a70e-e0291ffc1bd8_1.eb2b82f950df88e915c5afe813dc29db.jpg?crop=0.845xw:0.845xh;0.0369xw,0.0881xh&resize=768:*',
+    imageUrl: 'https://cdn.shopify.com/s/files/1/0253/6701/9565/products/Philodendron-Pink-Princess-Grow-Pot-Small_816774d6-4dcb-4c5d-a147-05c1025a9cc4_600x600.jpg?v=1649363100',
     description: "The recipe for a happy yucca is easy: sun, sun and more sun. Plant in a container deep enough to balance the top-heavy woody stems and water sparingly. Take note: This plant is toxic to cats and dogs.",
     tags: ['SlowFood', 'Lunch'],
   },
