@@ -3,9 +3,9 @@ header{
   height: 100px;
   position:relative;
   background: white;
-  background-image: url("https://sc01.alicdn.com/kf/H8128783d7ced4365be5433c3574490ea4.jpg");
+  /*background-image: url("https://sc01.alicdn.com/kf/H8128783d7ced4365be5433c3574490ea4.jpg");*/
   padding: 0;
-  border-bottom: 1px solid #35542f;
+  /*border-bottom: 1px solid #35542f;*/
 }
 
 a{
