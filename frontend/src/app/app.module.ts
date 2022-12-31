@@ -10,7 +10,9 @@ import { CartpageComponent } from './components/pages/cartpage/cartpage.componen
 import { TitleComponent } from './components/other/title/title.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import{ToastrModule}from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +25,21 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      // timeOut:3000,
+      // positionClass:'toast-bottom-right',
+      // newestOnTop:false
+
+      maxOpened: 1,
+      progressBar: true,
+      progressAnimation: 'decreasing',
+      preventDuplicates: true,
+    }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

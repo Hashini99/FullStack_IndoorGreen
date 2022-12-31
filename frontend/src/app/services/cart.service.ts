@@ -14,7 +14,11 @@ export class CartService {
 
   constructor() { }
 
+
+
   addToCart(plant: plant): void {
+
+
     let cartItem = this.cart.items
       .find(item => item.plant.id === plant.id);
     if (cartItem)
