@@ -8,7 +8,7 @@ import { user } from 'src/app/shared/models/user';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  [x: string]: any;
+// [x: string]: any;
 
   cartQuantity=0;
   user!:user;

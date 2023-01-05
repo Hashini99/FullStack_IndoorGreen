@@ -5,7 +5,8 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { ToastrService } from 'ngx-toastr';
 import { user } from '../shared/models/user';
 import { userlogin_in } from '../shared/interfaces/userlogin_in';
-import { USER_LOGIN_URL } from '../shared/constants/urls';
+import { userreg_i } from '../shared/interfaces/userreg_i';
+import { USER_LOGIN_URL, USER_REGISTER_URL } from '../shared/constants/urls';
 
 const USER_KEY = 'user';
 @Injectable({
@@ -36,6 +37,28 @@ export class userService {
     ) ;
 
 }
+
+register(userRegiser:userreg_i): Observable<user>{
+  return this.http.post<user>(USER_REGISTER_URL, userRegiser).pipe(
+    tap({
+      next: (user) => {
+        this.setUserToLocalStorage(user);
+        this.userSubject.next(user);
+        this.toastrService.success(
+          `Welcome to the IndoorGreen ${user.name}`,
+          'Register Successful'
+        )
+      },
+      error: (errorResponse) => {
+        this.toastrService.error(errorResponse.error,
+          'Register Failed')
+      }
+    })
+  )
+}
+
+
+
 logout(){
   this.userSubject.next(new user());
   localStorage.removeItem(USER_KEY);

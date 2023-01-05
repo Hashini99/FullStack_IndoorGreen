@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="details">
+    <app-title title="Register"></app-title>
+
+    <form [formGroup]="registerForm" (ngSubmit)="submit()">
+
+
+
+      <!-- partial:index.partial.html -->
+    <!--  <div id="bg"></div>
+
+      <div class="a"> <p> Register</p></div>-->
+
+
+      <div class="form-field">
+        <input type="name" placeholder="full name" formControlName="name"/>
+</div>
+        <div class="form-field">
+          <input type="email" placeholder="Email / Username" formControlName="email"/>
+        </div>
+<div class="error-list" *ngIf="fc.email.errors&& isSubmitted"></div>
+<!--<div *ngIf="fc.email.errors.required">should not be empty.</div>
+<div *ngIf="fc.email.errors.email">email is not correct</div>-->
+
+
+        <div class="form-field">
+          <input type="password" placeholder="Password"formControlName="password" required/>
+        </div>
+
+        <div class="form-field">
+          <input type="confirm password" placeholder="confirm Password"formControlName="confirm password" required/>
+        </div>
+
+          <div class="form-field">
+            <input type="address" placeholder="Address" formControlName="address"/>
+</div>
+
+
+        <div class="form-field">
+          <button class="btn" type="submit">Register</button>
+        </div>
+        <div class="form-field">
+          <p>Aready a user? <a routerLink="/login"[queryParams]="{returnUrl}">Login here</a></p>
+      <!-- partial -->
+
+
