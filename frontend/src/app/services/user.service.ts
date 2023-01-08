@@ -16,9 +16,15 @@ export class userService {
   private userSubject =
   new BehaviorSubject<user>(this.getUserFromLocalStorage());
   public userObservable:Observable<user>;
+
   constructor(private http:HttpClient, private toastrService:ToastrService) {
     this.userObservable = this.userSubject.asObservable();
   }
+  public get currentUser():user{
+    return this.userSubject.value;
+  }
+
+
   login(userLogin:userlogin_in):Observable<user>{
     return this.http.post<user>(USER_LOGIN_URL,userLogin).pipe(
       tap({

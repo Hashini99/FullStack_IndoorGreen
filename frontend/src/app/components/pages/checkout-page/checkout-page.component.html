@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="details">
+
+    <app-title title="Order Form" fontSize="1.6rem"></app-title>
+    <form [formGroup]="checkoutForm ">
+      <div id="bg"></div>
+      <div class="form-field">
+        <input type="name" placeholder="name" formControlName="name"/>
+      </div>
+      <div class="form-field">
+        <input type="address" placeholder="address" formControlName="address"/>
+      </div>
+<app-order-item-list [order]="order"></app-order-item-list>
+
+      <!-- partial:index.partial.html -->
+      <div id="bg"></div>
+
+        <!-- <div class="form-field">
+          <input type="name" placeholder="name" formControlName="name"/>
+        </div>
+        <div class="form-field">
+          <input type="address" placeholder="address" formControlName="address"/>
+        </div> -->
+
+<!--<div *ngIf="fc.email.errors.required">should not be empty.</div>
+<div *ngIf="fc.email.errors.email">email is not correct</div>-->
+
+
+        <!-- <div class="form-field">
+          <input type="password" placeholder="Password"formControlName="password" required/>                         </div> -->
+
+        <div class="form-field">
+          <button class="btn" type="submit">Got to payment</button>
+        </div>
+
+
+</form>

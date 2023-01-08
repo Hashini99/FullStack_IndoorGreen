@@ -1,5 +1,6 @@
 
 
+
 .container{
   display: flex;
   justify-content: center;
@@ -24,7 +25,6 @@
 }
 
 body {
-  background-color: palegoldenrod;
   font-family: 'Lato', sans-serif;
   color: #4A4A4A;
   display: flex;

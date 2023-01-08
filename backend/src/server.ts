@@ -9,6 +9,8 @@ import jwt from "jsonwebtoken";
 import plantRouter from './routers/plant.router';
 import userRouter from './routers/user.router';
 import { dbConnect } from './configs/database.config';
+import orderRouter from './routers/order.router';
+import router from './routers/plant.router';
 dbConnect();
 
 
@@ -22,6 +24,7 @@ app.use(cors({
 
 app.use("/api/plants",plantRouter)
 app.use("/api/users",userRouter)
+app.use("/api/order",orderRouter)
 
 
 const port=5000;
@@ -31,3 +34,4 @@ app.listen(port,()=>{
 })
 
 
+export default router;

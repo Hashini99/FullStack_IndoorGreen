@@ -1,8 +1,4 @@
 
-  [visible]="!plant"
-  notFoundMessage="Food Not Found"
-  resetLinkText="Back To Homepage">
-
 <div *ngIf="plant" class="container">
   <img [src]="plant.imageUrl" [alt]="plant.name"/>
 
@@ -13,6 +9,7 @@
       </span>
 
       <div class="description">
+        <div class="header">
         <span class="description">
           {{plant.description}}
         </span>
@@ -21,7 +18,9 @@
 
 
     <div class="price">
+      <div class="header">
       <span>
+
         {{plant.price | currency}}
       </span>
     </div>
