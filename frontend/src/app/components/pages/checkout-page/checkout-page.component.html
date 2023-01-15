@@ -3,12 +3,14 @@
 
     <app-title title="Order Form" fontSize="1.6rem"></app-title>
     <form [formGroup]="checkoutForm ">
+      <div class="f1">
       <div id="bg"></div>
       <div class="form-field">
         <input type="name" placeholder="name" formControlName="name"/>
       </div>
       <div class="form-field">
         <input type="address" placeholder="address" formControlName="address"/>
+      </div>
       </div>
 <app-order-item-list [order]="order"></app-order-item-list>
 

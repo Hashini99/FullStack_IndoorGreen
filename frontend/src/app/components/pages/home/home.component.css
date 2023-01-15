@@ -19,6 +19,7 @@ img {
 
 body {
   background:white(233, 212, 193);
+  background-color: #F8EDE3;
   color: black;
   width: 250%;
   max-width: 1500px;
@@ -37,6 +38,7 @@ section {
 header {
   background: white;
   text-align: center;
+  background-color: #F8EDE3;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -173,6 +175,11 @@ nav a:hover {
 
 .header {
   font-size: 4.5rem;
+  background-color: #F8EDE3;
+  color: green;
+  font-style: italic;
+  font-family: rustico;
+
 }
 
 .section-one-paragraph {
@@ -196,6 +203,9 @@ nav a:hover {
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:green;
+  font-style: italic;
 
 }
 
@@ -318,7 +328,9 @@ nav a:hover {
   text-align: center;
 }
 
-
+.a{
+  background-color: whitesmoke;
+}
 
 
 
