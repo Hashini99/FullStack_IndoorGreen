@@ -5,17 +5,17 @@ import {model, Schema, Types} from 'mongoose';
 import { plant, PlantSchema } from './plant.model';
 import { orderstatus } from '../constants/order_sta';
 
-export interface LatLng{
-    lat: string;
-    lng: string;
-}
+// export interface LatLng{
+//     lat: string;
+//     lng: string;
+// }
 
-export const LatLngSchema = new Schema<LatLng>(
-    {
-        lat: {type: String, required: true},
-        lng: {type: String, required: true},
-    }
-);
+// export const LatLngSchema = new Schema<LatLng>(
+//     {
+//         lat: {type: String, required: true},
+//         lng: {type: String, required: true},
+//     }
+// );
 
 export interface OrderItem{
     plant: plant;
@@ -38,7 +38,7 @@ export interface Order{
     totalPrice:number;
     name: string;
     address: string;
-    addressLatLng:LatLng
+    // addressLatLng:LatLng
     paymentId: string;
     status: orderstatus;
     user: Types.ObjectId;
@@ -49,7 +49,7 @@ export interface Order{
   const orderSchema = new Schema<Order>({
       name: {type: String, required: true},
       address: {type: String, required: true},
-      addressLatLng: {type: LatLngSchema, required: true},
+    //   addressLatLng: {type: LatLngSchema, required: true},
       paymentId: {type: String},
       totalPrice: {type: Number, required: true},
       items: {type: [OrderItemSchema], required: true},

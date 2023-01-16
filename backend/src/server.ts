@@ -29,7 +29,7 @@ app.use("/api/order",orderRouter)
 //     res.status(200).json({msg:"foeroi"})
 // })
 
-const port=5000;
+const port=3000;
 app.listen(port,()=>{
 
     console.log("Website served on http://localhost:" + port);

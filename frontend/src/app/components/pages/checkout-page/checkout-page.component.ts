@@ -52,8 +52,8 @@ checkoutForm!: FormGroup;
     //   return;
     //  }
 
-    // this.order.name = this.fc.name.value;
-    // this.order.address = this.fc.address.value;
+    this.order.name = this.fc.name.value;
+    this.order.address = this.fc.address.value;
 
     console.log(this.order);
 this.orderService.create(this.order).subscribe({
