@@ -47,7 +47,7 @@ router.post('/register', asyncHandler(
         .send('User is already exist, please login!');
         return;
       }
-      const encryptedPassword = await bcrypt.hash(password, 15);
+      //const encryptedPassword = await bcrypt.hash(password, 15);
 
       const newUser:user = {
         id:'',
@@ -70,8 +70,7 @@ const token=jwt.sign({
     expiresIn:"100d"
 });
 
-// user.token;
-// return user;
+
 
 return {
     id: user.id,

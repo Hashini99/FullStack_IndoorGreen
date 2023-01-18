@@ -12,5 +12,5 @@ export class order{
   paymentId!: string;
   createdAt!: string;
   status!: string;
-  addressLatLng: any;
+  //addressLatLng: any;
 }

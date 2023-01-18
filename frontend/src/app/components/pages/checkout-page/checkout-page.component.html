@@ -14,26 +14,15 @@
       </div>
 <app-order-item-list [order]="order"></app-order-item-list>
 
-      <!-- partial:index.partial.html -->
+
       <div id="bg"></div>
 
-        <!-- <div class="form-field">
-          <input type="name" placeholder="name" formControlName="name"/>
+
+
+<div class="buttons-container">
+          <div class="buttons">
+            <app-paypal [order]="order">
+            </app-paypal>
+          </div>
         </div>
-        <div class="form-field">
-          <input type="address" placeholder="address" formControlName="address"/>
-        </div> -->
-
-<!--<div *ngIf="fc.email.errors.required">should not be empty.</div>
-<div *ngIf="fc.email.errors.email">email is not correct</div>-->
-
-
-        <!-- <div class="form-field">
-          <input type="password" placeholder="Password"formControlName="password" required/>                         </div> -->
-
-        <div class="form-field">
-          <button class="btn" (click)="createOrder()">Go to payment</button>
-        </div>
-
-
 </form>

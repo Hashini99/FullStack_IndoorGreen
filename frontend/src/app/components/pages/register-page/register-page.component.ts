@@ -31,7 +31,7 @@ export class RegisterPageComponent implements OnInit {
       address: ['', [Validators.required, Validators.minLength(10)]]
 
   },{
-   // validators: PasswordsMatchValidator('password','confirmPassword')
+
 });
 
 this.returnUrl= this.activatedRoute.snapshot.queryParams.returnUrl;

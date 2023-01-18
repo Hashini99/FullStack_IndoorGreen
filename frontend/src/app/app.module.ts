@@ -11,7 +11,6 @@ import { TitleComponent } from './components/other/title/title.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import{ToastrModule}from 'ngx-toastr';
-// import { InputValidationComponent } from './components/partials/input-validation/input-validation.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';

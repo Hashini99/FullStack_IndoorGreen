@@ -25,9 +25,7 @@ app.use(cors({
 app.use("/api/plants",plantRouter)
 app.use("/api/users",userRouter)
 app.use("/api/order",orderRouter)
-// app.get("/",(req,res)=>{
-//     res.status(200).json({msg:"foeroi"})
-// })
+
 
 const port=3000;
 app.listen(port,()=>{

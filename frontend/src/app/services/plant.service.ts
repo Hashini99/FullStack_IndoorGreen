@@ -17,8 +17,7 @@ export class PlantService {
   }
 
   //SEARCH
-  //TAG
-  //ID
+
   getPlantById(plantId:string):Observable<plant>{
     return this.http.get<plant>(PLANTS_BY_ID_URL+plantId);
   }

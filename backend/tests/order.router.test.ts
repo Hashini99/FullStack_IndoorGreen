@@ -5,6 +5,6 @@ import router from "G:/Github/FullStack_IndoorGreen/backend/src/routers/order.ro
 describe("order.router.ts", () => {
  test("Catch-all route", async () => {
  const res = await request(router).get("/");
- expect(res.body).toEqual({ message: "Allo! Catch-all route." });
+ expect(res.body).toEqual({ message: "done" });
  });
 });
