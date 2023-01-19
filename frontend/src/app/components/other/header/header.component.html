@@ -1,7 +1,9 @@
 
 <header>
   <div class="container">
-    <a routerLink="/" class="logo">INDOOR GREEN</a>
+
+
+    <a routerLink="/" class="logo">  <img src="https://img.freepik.com/free-vector/vector-big-green-leaves-tropical-monstera-plant-isolated-white-background_1284-48407.jpg"></a>
     <nav>
       <ul>
         <li *ngIf="!isAuth" >
@@ -9,16 +11,13 @@
         </li>
         <!-- <li *ngIf="!isAuth" class="menu-container"> -->
           <a routerLink="/dashboard">{{user.name}}</a>
-          <div class="menu">
-            <a routerLink="/profile">Profile</a>
-            <a routerLink="/orders">Orders</a>
-            <a (click)="logout()">Logout</a>
-          </div>
-        <!-- </li> -->
+
         <li>
+
           <a routerLink="/cart-page">
             Cart <span *ngIf="cartQuantity" >{{cartQuantity}}</span>
           </a>
+          <a (click)="logout()">Logout</a>
         </li>
       </ul>
     </nav>

@@ -1,15 +1,6 @@
 
 
 
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 img {
   display: block;
   width: 95%;
@@ -52,82 +43,7 @@ header {
   text-transform: uppercase;
 }
 
-/* nav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  text-align: left;
-  background: white;
-  width: 100%;
-  height: 100vh;
-  margin-top: 1rem;
-  display: none;
-}
 
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1.5em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-nav a:hover {
-  color: #ffa98e;
-}
-
-.nav-toggle:checked ~ nav {
-  display: block;
-} */
 
 @media (min-width: 900px) {
   .nav-toggle-label {
@@ -168,6 +84,7 @@ nav a:hover {
   margin: 11rem 2rem 0;
   text-align: center;
   background-color: white;
+  margin-top: 200;
 
 
 
