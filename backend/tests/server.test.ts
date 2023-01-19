@@ -5,25 +5,17 @@
 //    });
 import asyncHandler from 'express-async-handler';
 import { ConnectOptions, connect } from 'mongoose';
-require("dotenv").config();
+
+ import router from "G:/Github/FullStack_IndoorGreen/backend/src/routers/plant.router";
+ import Orderrouter from "G:/Github/FullStack_IndoorGreen/backend/src/routers/plant.router";
+ import Plantrouter from "G:/Github/FullStack_IndoorGreen/backend/src/routers/plant.router";
+ import userRouter from 'G:/Github/FullStack_IndoorGreen/backend/src//routers/user.router';
+ require("dotenv").config();
 const mongoose = require("mongoose");
-// const ArticleService = require("../services/ArticleService");
- //const plantRouter=require("backend/src/routers/plant.router.ts");
- import { PlantModel } from '../models/plant.model';
- //import PlantModel from "'../models/plant.model'";
- //const PlantModel  =require ("G:/Github/FullStack_IndoorGreen/backend/src/models/plant.model.ts")
- import { plant, PlantSchema } from './plant.model';
+import request from "supertest";
 
 
-// describe(dbConnect () ;=> {
-//   beforeAll(async () => {
-//     await mongoose.connect(process.env.mongoURI, {
-//         useNewUrlParser: true,
-//         useCreateIndex: true,
-//         useUnifiedTopology: true,
-//     })
-//   });
-  describe (" dbConnect", () => {
+  describe (" server test", () => {
     //export const dbConnect = () => {
     beforeAll(async () => {
     await mongoose.connect(process.env.mongoURI, {
@@ -34,42 +26,28 @@ const mongoose = require("mongoose");
  } );
 
 
-  test("/",async () => {
-    const id = "5ff2454f94eeee0a7acb5c30";
-    const plants = await PlantModel.find();
-    //const plant =  await plantRouter.getplantbyId(id);
-   // expect(article.title).toBe("This is another post example");
+  
+ test("server", async () => {
+  const res = await request(router).get("/");
+  expect(res.body).toEqual({ message: "done" });
   });
-//   router.get("/",asyncHandler(
-//     async (req,res)=>{
-//      const plants = await PlantModel.find();
-//        res.send(plants);
-//    }
-//    ))
-  })
-// // //   afterAll(async done => {
-// // //     mongoose.disconnect();
-// // //     done();
-// // // });
+ });
+ test("server", async () => {
+  const res = await request(Orderrouter).get("/");
+  expect(res.body).toEqual({ message: "done" });
+  });
 
 
-// import request from "supertest";
-// import app from "G:/Github/FullStack_IndoorGreen/backend/src/server";
-// require("dotenv").config();
-// const mongoose = require("mongoose");
+ test("server", async () => {
+  const res = await request(userRouter).get("/");
+  expect(res.body).toEqual({ message: "done" });
+  });
+ 
 
-// // describe("server.ts", () => {
-// //  test("Catch-all route", async () => {
-// //  const res = await request(app).get("/");
-// //  expect(res.body).toEqual({ message: "done" });
-// //  });
-// // });
-// describe("Connection", () => {
-//     beforeAll(async () => {
-//       await mongoose.connect(process.env.mongoURI, {
-//           useNewUrlParser: true,
-//           useCreateIndex: true,
-//           useUnifiedTopology: true,
-//       })
-//     });
-    
+
+  
+//   afterAll(async done => {
+//     mongoose.disconnect();
+//     done();
+// });
+

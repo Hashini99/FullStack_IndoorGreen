@@ -1,17 +1,17 @@
-name: TEST
+# name: TEST
 
-on: [push, pull_request]
+# on: [push, pull_request]
 
-jobs:
-  test:
+# jobs:
+#   test:
 
-    runs-on: ubuntu-latest
+#     runs-on: widows-latest
     
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo success!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+#     steps:
+#     - uses: actions/checkout@v1
+#     - name: Run a one-line script
+#       run: echo success!
+#     - name: Run a multi-line script
+#       run: |
+#         echo Add other actions to build,
+#         echo test, and deploy your project.
