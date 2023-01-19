@@ -1,21 +1,10 @@
 import {model, Schema, Types} from 'mongoose';
 
-//import {orderStatus}from'../consta'
-//import { OrderStatus } from '../other/order_status';
+
 import { plant, PlantSchema } from './plant.model';
 import { orderstatus } from '../constants/order_sta';
 
-// export interface LatLng{
-//     lat: string;
-//     lng: string;
-// }
 
-// export const LatLngSchema = new Schema<LatLng>(
-//     {
-//         lat: {type: String, required: true},
-//         lng: {type: String, required: true},
-//     }
-// );
 
 export interface OrderItem{
     plant: plant;
