@@ -20,9 +20,14 @@
 
 
 <div class="buttons-container">
-          <div class="buttons">
-            <app-paypal [order]="order">
+          <div class="buttons" >
+            <button (click)="createOrder()">
+              <app-paypal [order]="order">
             </app-paypal>
+            </button>
+            <!-- <button (click)="createOrder()">
+              Go To Payment
+            </button> -->
           </div>
         </div>
 </form>

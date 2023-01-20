@@ -3,7 +3,6 @@ import { sample_users } from '../data';
 import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import {  user ,UserModel, } from '../models/user.model';
-import bcrypt from 'bcryptjs';
 
 const router = Router();
 
@@ -47,7 +46,7 @@ router.post('/register', asyncHandler(
         .send('User is already exist, please login!');
         return;
       }
-      //const encryptedPassword = await bcrypt.hash(password, 15);
+      //encrypted pw
 
       const newUser:user = {
         id:'',

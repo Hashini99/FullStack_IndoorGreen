@@ -1,6 +1,4 @@
 import {model, Schema, Types} from 'mongoose';
-
-
 import { plant, PlantSchema } from './plant.model';
 import { orderstatus } from '../constants/order_sta';
 
@@ -27,7 +25,6 @@ export interface Order{
     totalPrice:number;
     name: string;
     address: string;
-
     paymentId: string;
     status: orderstatus;
     user: Types.ObjectId;
