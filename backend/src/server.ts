@@ -4,8 +4,6 @@ dotenv.config();
 
 import express, { Router } from "express";
 import cors from "cors";
-import { sample_plants, sample_users } from "./data";
-import jwt from "jsonwebtoken";
 import plantRouter from './routers/plant.router';
 import userRouter from './routers/user.router';
 import { dbConnect } from './configs/database.config';

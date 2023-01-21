@@ -8,7 +8,6 @@ export class order{
   totalPrice!:number;
   name!: string;
   address!: string;
-
   paymentId!: string;
   createdAt!: string;
   status!: string;

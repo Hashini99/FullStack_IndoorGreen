@@ -35,7 +35,6 @@ export interface Order{
   const orderSchema = new Schema<Order>({
       name: {type: String, required: true},
       address: {type: String, required: true},
-    
       paymentId: {type: String},
       totalPrice: {type: Number, required: true},
       items: {type: [OrderItemSchema], required: true},

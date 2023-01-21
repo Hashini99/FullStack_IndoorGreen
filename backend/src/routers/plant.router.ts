@@ -21,7 +21,6 @@ router.get("/seed",asyncHandler(
 ))
 
 
-
 router.get("/",asyncHandler(
  async (req,res)=>{
   const plants = await PlantModel.find();
