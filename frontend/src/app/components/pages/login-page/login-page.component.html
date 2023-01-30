@@ -1,6 +1,6 @@
 <div class="container">
   <div class="details">
-    <app-title title="Login"></app-title>
+   <h1>LOGIN</h1>
 
     <form [formGroup]="loginForm" (ngSubmit)="submit()">
 
@@ -10,7 +10,7 @@
       <div id="bg"></div>
 
         <div class="form-field">
-          <input type="email" placeholder="Email / Username" formControlName="email"/>
+          <input type="email" placeholder="Email " formControlName="email"/>
         </div>
 <div class="error-list" *ngIf="fc.email.errors&& isSubmitted"></div>
 
@@ -22,6 +22,6 @@
           <button class="btn" type="submit">Log in</button>
         </div>
         <div class="form-field">
-          <p>New User? <a routerLink="/register"[queryParams]="{returnUrl: returnUrl}">Register here</a></p>
+          <p>New User? <a routerLink="/register"[queryParams]="{returnUrl: returnUrl}">Sign Up here</a></p>
 
 

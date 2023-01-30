@@ -36,6 +36,9 @@ body {
   margin: 0;
   padding: 0;
 }
+h1{
+  color:green;
+}
 .f1{
   background-color: #F8EDE3;
 }

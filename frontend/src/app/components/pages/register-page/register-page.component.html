@@ -1,14 +1,14 @@
 <div class="container">
   <div class="details">
-    <app-title title="Register"></app-title>
+    <h1>SIGN UP</h1>
 
     <form [formGroup]="registerForm" (ngSubmit)="submit()">
 
       <div class="form-field">
-        <input type="name" placeholder="full name" formControlName="name"/>
+        <input type="name" placeholder="Full Name" formControlName="name"/>
 </div>
         <div class="form-field">
-          <input type="email" placeholder="Email / Username" formControlName="email"/>
+          <input type="email" placeholder="Email " formControlName="email"/>
         </div>
 <div class="error-list" *ngIf="fc.email.errors&& isSubmitted"></div>
 
@@ -20,14 +20,14 @@
 
 
         <div class="form-field">
-          <input type="password" placeholder="confirm Password"formControlName="password" required/>
+          <input type="password" placeholder="Confirm Password"formControlName="password" required/>
         </div>
 
           <div class="form-field">
             <input type="address" placeholder="Address" formControlName="address"/>
 </div>
 <div class="form-field">
-  <button class="btn" type="submit">Register</button>
+  <button class="btn" type="submit">Sign Up</button>
 </div>
 
 

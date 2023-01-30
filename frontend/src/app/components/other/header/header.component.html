@@ -3,22 +3,32 @@
   <div class="container">
 
 
-    <a routerLink="/" class="logo">  <img src="https://img.freepik.com/free-vector/vector-big-green-leaves-tropical-monstera-plant-isolated-white-background_1284-48407.jpg"></a>
+    <a routerLink="/" class="logo">  <img src="https://img.freepik.com/free-vector/vector-big-green-leaves-tropical-monstera-plant-isolated-white-background_1284-48407.jpg" class="img1"></a>
     <nav>
       <ul>
         <li *ngIf="!isAuth" >
           <a routerLink="/login">Login</a>
         </li>
+
         <!-- <li *ngIf="!isAuth" class="menu-container"> -->
           <a routerLink="/dashboard">{{user.name}}</a>
-
-        <li>
-
-          <a routerLink="/cart-page">
-            Cart <span *ngIf="cartQuantity" >{{cartQuantity}}</span>
-          </a>
+          <li  >
+            <a routerLink="/chat">Chat with us</a>
+          </li>
+          <!-- logout -->
           <a (click)="logout()">Logout</a>
+<!-- cart -->
+        <li>
+          <a routerLink="/cart-page"><img src="https://static.vecteezy.com/system/resources/previews/004/999/463/original/shopping-cart-icon-illustration-free-vector.jpg"class="img2">
+             <span *ngIf="cartQuantity" >{{cartQuantity}}</span>
+          </a>
+          <!-- logout -->
+          <!-- <a (click)="logout()">Logout</a> -->
         </li>
+         <!-- chat -->
+         <!-- <li  >
+          <a routerLink="/chat">Chat with us</a>
+        </li> -->
       </ul>
     </nav>
   </div>

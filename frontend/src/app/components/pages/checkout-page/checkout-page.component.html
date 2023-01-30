@@ -1,12 +1,15 @@
 <div class="container">
   <div class="details">
 
-    <app-title title="Order Form" fontSize="1.6rem"></app-title>
+    <h1>CHECKOUT</h1>
     <form [formGroup]="checkoutForm ">
       <div class="f1">
       <div id="bg"></div>
       <div class="form-field">
         <input type="name" placeholder="name" formControlName="name"/>
+      </div>
+      <div class="form-field">
+        <input type="email" placeholder="email" formControlName="email"/>
       </div>
       <div class="form-field">
         <input type="address" placeholder="address" formControlName="address"/>
@@ -21,13 +24,15 @@
 
 <div class="buttons-container">
           <div class="buttons" >
-            <button (click)="createOrder()">
+            <!-- <button (click)="createOrder()">
               <app-paypal [order]="order">
             </app-paypal>
-            </button>
+            </button> -->
             <!-- <button (click)="createOrder()">
               Go To Payment
             </button> -->
+            <app-paypal [order]="order">
+            </app-paypal>
           </div>
         </div>
 </form>

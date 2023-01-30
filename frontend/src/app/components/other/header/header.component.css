@@ -25,16 +25,21 @@ a:hover{
   font-style: oblique;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-img {
+.img1 {
   display: block;
   width: 95%;
   height: 120%;
   max-width: 120px;
 }
 
+.img2{
 
+/* display: block; */
+  width: 55%;
+  height: 62%;
+  max-width: 60px;
 
-
+}
 ul{
   display: flex;
   list-style-type: none;

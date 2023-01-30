@@ -20,6 +20,7 @@ import { OrderItemListComponent } from './components/other/order-item-list/order
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { PaymentpageComponent } from './components/pages/paymentpage/paymentpage.component';
 import { PaypalComponent } from './components/other/paypal/paypal.component';
+import { ChatAppComponent } from './components/pages/chat-app/chat-app.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { PaypalComponent } from './components/other/paypal/paypal.component';
 
     OrderItemListComponent,
       PaymentpageComponent,
-      PaypalComponent
+      PaypalComponent,
+      ChatAppComponent
   ],
   imports: [
     BrowserModule,
