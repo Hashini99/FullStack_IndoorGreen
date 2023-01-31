@@ -28,12 +28,7 @@ router.get("/",asyncHandler(
 }
 ))
 
-//search api
 
-//router.get("/api/plants/search/:searchterm"),(req,res)=>{
-  // const searchterm=req.params.searchterm;
-//}
-//)
 
 
 

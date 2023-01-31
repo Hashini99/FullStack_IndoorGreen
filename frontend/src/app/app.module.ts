@@ -15,10 +15,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
-
 import { OrderItemListComponent } from './components/other/order-item-list/order-item-list.component';
 import { AuthInterceptor } from './auth/auth.interceptor';
-import { PaymentpageComponent } from './components/pages/paymentpage/paymentpage.component';
+
 import { PaypalComponent } from './components/other/paypal/paypal.component';
 import { ChatAppComponent } from './components/pages/chat-app/chat-app.component';
 @NgModule({
@@ -29,13 +28,11 @@ import { ChatAppComponent } from './components/pages/chat-app/chat-app.component
     PlantPageComponent,
     CartpageComponent,
     TitleComponent,
-
     LoginPageComponent,
     RegisterPageComponent,
     CheckoutPageComponent,
-
     OrderItemListComponent,
-      PaymentpageComponent,
+
       PaypalComponent,
       ChatAppComponent
   ],

@@ -1,19 +1,18 @@
 import { environment } from "src/environments/environment";
 
-const BASE_URL = environment.production? '' : 'http://localhost:3000';
-// const CHAT_URL =environment.production? '':'http://localhost:9000';
+const main_url = environment.production? '' : 'http://localhost:3000';
+// const chat_url =environment.production? '':'http://localhost:9000';
 
-export const USER_LOGIN_URL = BASE_URL + '/api/users/login';
-export const PLANTS_URL = BASE_URL + '/api/plants';
+export const login_url = main_url + '/api/users/login';
+export const plants_url = main_url + '/api/plants';
 
-export const PLANTS_BY_ID_URL = PLANTS_URL + '/';
+export const plantID_url = plants_url + '/';
 
-//export const USER_LOGIN_URL = BASE_URL + '/api/users/login';
-export const USER_REGISTER_URL = BASE_URL + '/api/users/register';
+export const register_url = main_url + '/api/users/register';
 
-export const ORDERS_URL = BASE_URL + '/api/orders';
-export const ORDER_CREATE_URL = ORDERS_URL + '/create';
-export const ORDER_NEW_FOR_CURRENT_USER_URL = ORDERS_URL + '/newOrderForCurrentUser';
-export const ORDER_PAY_URL = ORDERS_URL + '/pay';
-// export const CHAT_APP= CHAT_URL + '/api/chat';
+export const order_url = main_url + '/api/orders';
+export const create_order = order_url + '/create';
+export const new_order = order_url + '/newOrderForCurrentUser';
+export const payment_url = order_url + '/pay';
+// export const chat_app= chat_url + '/api/chat';
 

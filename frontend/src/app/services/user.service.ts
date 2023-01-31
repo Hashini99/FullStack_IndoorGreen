@@ -6,7 +6,7 @@ import { ToastrService } from 'ngx-toastr';
 import { user } from '../shared/models/user';
 import { userlogin_in } from '../shared/interfaces/userlogin_in';
 import { userreg_i } from '../shared/interfaces/userreg_i';
-import { USER_LOGIN_URL, USER_REGISTER_URL } from '../shared/constants/urls';
+import { login_url, register_url } from '../shared/constants/urls';
 
 const USER_KEY = 'user';
 @Injectable({
@@ -26,13 +26,13 @@ export class userService {
 
 
   login(userLogin:userlogin_in):Observable<user>{
-    return this.http.post<user>(USER_LOGIN_URL,userLogin).pipe(
+    return this.http.post<user>(login_url,userLogin).pipe(
       tap({
         next: (user) =>{
           this.userSubject.next(user);
           this.setUserToLocalStorage(user);
           this.toastrService.success(
-            `Welcome to Indoor Green ${user.name}!`,
+            `Hello  ${user.name}!`,
             'Login Successful'
           )
         },
@@ -45,13 +45,13 @@ export class userService {
 }
 
 register(userRegiser:userreg_i): Observable<user>{
-  return this.http.post<user>(USER_REGISTER_URL, userRegiser).pipe(
+  return this.http.post<user>(register_url, userRegiser).pipe(
     tap({
       next: (user) => {
         this.setUserToLocalStorage(user);
         this.userSubject.next(user);
         this.toastrService.success(
-          `Welcome to the IndoorGreen ${user.name}`,
+          `Hello ${user.name}`,
           'Register Successful'
         )
       },
