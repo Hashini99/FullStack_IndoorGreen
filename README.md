@@ -1,6 +1,6 @@
 # 🌿 Indoor Green – Indoor Plant E-commerce Web App
 
-**Indoor Green** is a simple and clean full-stack e-commerce web application built with the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack. It allows users to browse, search, and purchase indoor plants, while admins can manage the product inventory.
+**Indoor Green** is a simple and clean full-stack e-commerce web application built with the MEAN (MongoDB, Express.js, Angular.js, Node.js) stack. It allows users to browse, search, and purchase indoor plants.
 
 ---
 
